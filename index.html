@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramo de Flores Amarillas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="container">
+    <img class="snoopy-image" src="snoopy.png/images (4).jpg" alt="Snoopy">
+
+    <header class="header">
+      <h1 class="title">Flores Amarillas Para Ti 🌻</h1>
+      <p class="subtitle">Haz clic en cualquier flor para ver la magia florecer</p>
+    </header>
+
+    <section class="bouquet-wrapper">
+      <div class="bouquet" id="bouquet">
+        
+        <!-- Flor 1 (Centro) -->
+        <article class="flower flower-center" data-message="¡Tu luz ilumina cualquier día gris!">
+          <div class="flower-head">
+            <div class="center-disc"></div>
+            <div class="petals">
+              <span style="--i:1"></span><span style="--i:2"></span>
+              <span style="--i:3"></span><span style="--i:4"></span>
+              <span style="--i:5"></span><span style="--i:6"></span>
+              <span style="--i:7"></span><span style="--i:8"></span>
+              <span style="--i:9"></span><span style="--i:10"></span>
+              <span style="--i:11"></span><span style="--i:12"></span>
+            </div>
+          </div>
+          <div class="stem">
+            <div class="leaf leaf-left"></div>
+            <div class="leaf leaf-right"></div>
+          </div>
+        </article>
+
+        <!-- Flor 2 (Izquierda) -->
+        <article class="flower flower-left" data-message="Gracias por estar siempre allí.">
+          <div class="flower-head">
+            <div class="center-disc"></div>
+            <div class="petals">
+              <span style="--i:1"></span><span style="--i:2"></span>
+              <span style="--i:3"></span><span style="--i:4"></span>
+              <span style="--i:5"></span><span style="--i:6"></span>
+              <span style="--i:7"></span><span style="--i:8"></span>
+              <span style="--i:9"></span><span style="--i:10"></span>
+              <span style="--i:11"></span><span style="--i:12"></span>
+            </div>
+          </div>
+          <div class="stem">
+            <div class="leaf leaf-left"></div>
+          </div>
+        </article>
+
+        <!-- Flor 3 (Derecha) -->
+        <article class="flower flower-right" data-message="Que nunca te falten motivos para sonreír.">
+          <div class="flower-head">
+            <div class="center-disc"></div>
+            <div class="petals">
+              <span style="--i:1"></span><span style="--i:2"></span>
+              <span style="--i:3"></span><span style="--i:4"></span>
+              <span style="--i:5"></span><span style="--i:6"></span>
+              <span style="--i:7"></span><span style="--i:8"></span>
+              <span style="--i:9"></span><span style="--i:10"></span>
+              <span style="--i:11"></span><span style="--i:12"></span>
+            </div>
+          </div>
+          <div class="stem">
+            <div class="leaf leaf-right"></div>
+          </div>
+        </article>
+
+        <!-- Envoltorio del ramo -->
+        <div class="wrapper-ribbon">
+          <div class="wrap-paper"></div>
+          <div class="bow"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <button id="btn-message" class="btn-primary">Abrir Nota Especial ✉️</button>
+
+  </main>
+
+  <!-- Tarjeta Modal Interactiva -->
+  <dialog id="modal-note" class="modal">
+    <div class="modal-content">
+      <button id="btn-close-modal" class="close-button">&times;</button>
+
+      <h2>Un Detalle Especial 💛</h2>
+      <p id="note-text">
+        Las flores amarillas simbolizan la alegría, la amistad sincera y el inicio de momentos radiantes.
+      </p>
+
+      <div class="modal-footer">
+        <span>Con cariño Justin</span>
+      </div>
+    </div>
+  </dialog>
+
+  <div id="particles-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
